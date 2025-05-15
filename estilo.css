@@ -84,6 +84,7 @@ body {
 .sessao-principal .bloco {
 	width: 100%;
 	max-width: 1296px;
+  height: 382px;
 	margin: 60px auto;
 	/* Espaço acima e centralizado */
 	display: flex;
