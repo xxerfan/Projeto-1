@@ -99,6 +99,7 @@ body {
 
 .fundo-vermelho {
 	background: linear-gradient(89.95deg, #91282F 0.44%, #330002 98.92%);
+  border-radius: 12px;
 }
 /* Estilo para títulos destacados (primeira parte) */
 
@@ -140,7 +141,7 @@ p {
 	border: 1px solid #fff;
 	padding: 10px 20px;
 	text-decoration: none;
-	border-radius: 6px;
+	border-radius: 10px;
 	width: fit-content;
 	font-size: 16px;
 }
