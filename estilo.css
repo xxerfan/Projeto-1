@@ -1,247 +1,286 @@
+/* Reset básico de margens e padding para todos os elementos e ajuste do box-sizing */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+/* Estilo geral do corpo da página */
 
 body {
-  background-color: #020202;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: #020202;
+	/* Fundo preto */
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	/* Fonte legível e clean */
 }
+/* Container do topo com logo e menu */
 
 .container-topo {
-  width: 100%;
-  max-width: 1278px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 35px;
-
+	width: 100%;
+	max-width: 1278px;
+	/* Largura máxima */
+	height: auto;
+	display: flex;
+	/* Layout flexível horizontal */
+	justify-content: space-between;
+	/* Espaçamento entre logo e menu */
+	align-items: center;
+	/* Alinha verticalmente ao centro */
+	margin: 0 auto;
+	/* Centraliza horizontalmente */
+	padding: 35px;
+	/* Espaçamento interno */
 }
+/* Dimensão da imagem do logo */
 
 .logo img {
-  width: 83px;
-  height: 22.21px;
+	width: 83px;
+	height: 22.21px;
 }
+/* Estilização do menu de navegação */
 
 .menu-navegacao ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
-  gap: 16px;
+	display: flex;
+	/* Lista em linha */
+	align-items: center;
+	list-style: none;
+	/* Remove marcadores */
+	flex-wrap: wrap;
+	/* Permite quebra de linha em telas menores */
+	gap: 16px;
+	/* Espaçamento entre itens */
 }
+/* Links do menu principal */
 
 .menu-navegacao ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 12px;
-  font-size: 16px;
+	color: #fff;
+	/* Cor branca */
+	text-decoration: none;
+	/* Remove sublinhado */
+	padding: 8px 12px;
+	/* Espaçamento interno */
+	font-size: 16px;
 }
+/* Estilo do botão de compra no menu */
 
 .botao-compra {
-  color: #fff;
-  border: 1.5px solid #fff;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 10px 20px;
+	color: #fff;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+	/* Bordas arredondadas */
+	text-decoration: none;
+	padding: 10px 20px;
 }
+/* Efeito hover para botão de compra */
 
 .botao-compra:hover {
-  background-color: #ffffff80;
-  color: #020202;
+	background-color: #ffffff80;
+	/* Branco semitransparente */
+	color: #020202;
+	/* Texto escuro */
 }
+/* Blocos dentro da sessão principal */
 
 .sessao-principal .bloco {
-  width: 100%;
-  max-width: 1296px;
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 56px;
-  padding: 0 24px;
+	width: 100%;
+	max-width: 1296px;
+	margin: 60px auto;
+	/* Espaço acima e centralizado */
+	display: flex;
+	/* Flex horizontal para texto e imagem */
+	justify-content: space-between;
+	align-items: center;
+	gap: 56px;
+	/* Espaçamento entre texto e imagem */
+	padding: 0 24px;
+	/* Espaçamento lateral */
 }
+/* Fundo vermelho com gradiente para destaque */
 
 .fundo-vermelho {
-  background: linear-gradient(89.95deg, #91282F 0.44%, #330002 98.92%);
+	background: linear-gradient(89.95deg, #91282F 0.44%, #330002 98.92%);
 }
+/* Estilo para títulos destacados (primeira parte) */
 
-.destaque{
-  font-weight: bold;
-  margin-right: 10px;
-  font-size: 60px;
+.destaque {
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 60px;
+}
+/* Estilo para títulos destacados (segunda parte) */
 
+.destaque2 {
+	font-weight: 300;
+	font-style: italic;
 }
-.destaque2{
-  font-weight: 300;
-  font-style: italic;
-}
+/* Container do conteúdo de texto dentro dos blocos */
+
 .conteudo-texto {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 50%;
-  margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	/* Espaçamento vertical entre texto e botão */
+	max-width: 50%;
+	/* Ocupa metade do bloco */
+	margin-top: 60px;
+	/* Espaçamento acima */
 }
-.conteudo-texto3{
-  width: 426px;
-  height: 207px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 50%;
-  margin-top: 60px;
+/* Texto em branco para títulos e parágrafos */
+
+h2,
+p {
+	color: #fff;
 }
-h2, p {
-  color: #fff;
-}
+/* Estilo dos botões de destaque e informação */
 
 .botao-destaque,
 .botao-informacao {
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  width: fit-content;
-  font-size: 16px;
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 6px;
+	width: fit-content;
+	font-size: 16px;
 }
+/* Efeito hover para os botões */
 
 .botao-destaque:hover,
 .botao-informacao:hover {
-  background-color: #ffffff80;
-  color: #020202;
+	background-color: #ffffff80;
+	color: #020202;
 }
+/* Estilização das imagens de destaque */
 
-.imagem-destaque{
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  }
+.imagem-destaque {
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+/* Estilo do rodapé */
 
 .rodape {
-  background-color: #fff;
-  padding: 20px 0;
-  width: 100%;
+	background-color: #fff;
+	/* Fundo branco */
+	padding: 20px 0;
+	width: 100%;
 }
+/* Conteúdo centralizado no rodapé */
 
 .conteudo-rodape {
-  width: 100%;
-  max-width: 1296px;
-  margin: 20px auto;
-  text-align: center;
+	width: 100%;
+	max-width: 1296px;
+	margin: 20px auto;
+	text-align: center;
 }
+/* Logo no rodapé */
 
 .logo-rodape {
-  margin: 20px auto;
-  width: 83px;
-  height: 16px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+	margin: 20px auto;
+	width: 83px;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
+/* Parágrafo de aviso no rodapé */
 
 .conteudo-rodape p {
-  font-size: 13px;
-  margin: 20px 0;
-  color: #020202;
+	font-size: 13px;
+	margin: 20px 0;
+	color: #020202;
+	/* Texto escuro */
 }
+/* Lista de links no rodapé */
 
 .links-rodape ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 0;
 }
+/* Estilo dos links no rodapé */
 
 .links-rodape a {
-  color: #020202;
-  text-decoration: none;
-  font-size: 13px;
+	color: #020202;
+	text-decoration: none;
+	font-size: 13px;
 }
+/* ===== Responsividade para telas menores que 1024px ===== */
 
-/* RESPONSIVIDADE */
-  @media screen and (max-width:1023px) {
-  .container-topo {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .menu-navegacao ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .menu-navegacao ul li a {
-    font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  .sessao-principal .bloco {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .conteudo-texto {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .conteudo-texto h2,
-  .conteudo-texto p {
-    text-align: center;
-  }
-
-  .imagem-destaque {
-    text-align: center;
-  }
-
-  .imagem-destaque img {
-    max-width: 100%;
-    height: auto;
-  }
-  .imagem-destaque1 {
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .imagem-destaque1 img {
-    max-width: 100%;
-    height: auto;
-  }
-  .logo img {
-    width: 60px;
-    height: auto;
-  }
-
-  .logo-rodape img {
-    max-width: 100px;
-    height: auto;
-  }
-
-  .botao-destaque,
-  .botao-informacao {
-    font-size: 14px;
-    padding: 8px 14px;
-  }
-
-  .links-rodape ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .conteudo-rodape p {
-    padding: 0 10px;
-  }
+@media screen and (max-width: 1023px) {
+	/* Ajusta container do topo para coluna e centraliza itens */
+	.container-topo {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		padding: 20px;
+	}
+	/* Menu com quebra de linha e centralizado */
+	.menu-navegacao ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+	/* Ajusta tamanho e padding dos links do menu */
+	.menu-navegacao ul li a {
+		font-size: 14px;
+		padding: 6px 10px;
+	}
+	/* Blocos empilhados em coluna e texto centralizado */
+	.sessao-principal .bloco {
+		flex-direction: column;
+		text-align: center;
+	}
+	/* Conteúdo de texto ocupa 100% e centraliza */
+	.conteudo-texto {
+		max-width: 100%;
+		align-items: center;
+	}
+	/* Textos centralizados */
+	.conteudo-texto h2,
+	.conteudo-texto p {
+		text-align: center;
+	}
+	/* Imagens centralizadas e ajustadas */
+	.imagem-destaque,
+	.imagem-destaque1 {
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+	}
+	.imagem-destaque img,
+	.imagem-destaque1 img {
+		max-width: 100%;
+		height: auto;
+	}
+	/* Logo reduzida */
+	.logo img {
+		width: 60px;
+		height: auto;
+	}
+	/* Logo do rodapé adaptada */
+	.logo-rodape img {
+		max-width: 100px;
+		height: auto;
+	}
+	/* Botões com fonte e padding menores */
+	.botao-destaque,
+	.botao-informacao {
+		font-size: 14px;
+		padding: 8px 14px;
+	}
+	/* Lista de links no rodapé passa a ser vertical */
+	.links-rodape ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+	/* Parágrafo do rodapé com padding lateral */
+	.conteudo-rodape p {
+		padding: 0 10px;
+	}
 }
