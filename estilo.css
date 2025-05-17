@@ -10,7 +10,7 @@
 body {
 	background-color: #020202;
 	/* Fundo preto */
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: "Inter"
 	/* Fonte legível e clean */
 }
 /* Container do topo com logo e menu */
@@ -83,7 +83,8 @@ body {
 
 .sessao-principal .bloco {
 	width: 100%;
-	max-width: 1296px;
+	max-width: 1312px;
+	height: 384;
 	margin: 60px auto;
 	/* Espaço acima e centralizado */
 	display: flex;
@@ -104,19 +105,20 @@ body {
 /* Estilo para títulos destacados (primeira parte) */
 
 .destaque {
-	font-weight: bold;
+	font-weight: 700;
 	margin-right: 10px;
 	font-size: 60px;
 }
 /* Estilo para títulos destacados (segunda parte) */
 
 .destaque2 {
-	font-weight: 300;
+	font-weight: 400;
 	font-style: italic;
+	font-size: 30px;
 }
 /* Container do conteúdo de texto dentro dos blocos */
 
-.conteudo-texto {
+.conteudo-texto1 {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -125,9 +127,41 @@ body {
 	/* Ocupa metade do bloco */
 	margin-top: 60px;
 	/* Espaçamento acima */
+	font-size: 16px;
+	font-weight: 300;
 }
 /* Texto em branco para títulos e parágrafos */
+.conteudo-texto2 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	/* Espaçamento vertical entre texto e botão */
+	max-width: 50%;
+	/* Ocupa metade do bloco */
+	margin-top: 60px;
+	/* Espaçamento acima */
+	font-size: 20px;
+	font-weight: 300;
 
+}
+/* Texto em branco para títulos e parágrafos */
+.conteudo-texto3 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	/* Espaçamento vertical entre texto e botão */
+	max-width: 50%;
+	/* Ocupa metade do bloco */
+	margin-top: 60px;
+	/* Espaçamento acima */
+	font-size: 17px;
+	font-weight: 400;
+}
+.conteudo-texto3 h2{
+	font-size: 36px;
+	font-weight: 600;
+}
+/* Texto em branco para títulos e parágrafos */
 h2,
 p {
 	color: #fff;
